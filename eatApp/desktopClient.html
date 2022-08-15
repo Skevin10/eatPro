@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/31ead8eaab.js" crossorigin="anonymous"></script>    
+</head>
+<body style="background-color: #EF6363;">
+
+
+
+
+    <div class="container" style="background-color: #EF6363;  position : absolute; width : 100%; height : 100%;">
+        <div class="row">
+            <div class="col-12">
+            <section id="formulario">  <!--section es como un div un rectangulo -->
+                <a href="desktop2.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 30px; padding-top:10px;"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M160 416H96c-17.67 0-32-14.33-32-32V128c0-17.67 14.33-32 32-32h64c17.67 0 32-14.33 32-32S177.7 32 160 32H96C42.98 32 0 74.98 0 128v256c0 53.02 42.98 96 96 96h64c17.67 0 32-14.33 32-32S177.7 416 160 416zM502.6 233.4l-128-128c-12.51-12.51-32.76-12.49-45.25 0c-12.5 12.5-12.5 32.75 0 45.25L402.8 224H192C174.3 224 160 238.3 160 256s14.31 32 32 32h210.8l-73.38 73.38c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0l128-128C515.1 266.1 515.1 245.9 502.6 233.4z"/></svg>
+                </a>
+                <!-- <h1 style="padding-top: 30px; font-size: 3rem; color: white;">Iniciar Sesion</h1>  -->
+                <div class="col-12">
+                    <!-- <img src="img/logo.png" style=" width: 250px; margin-top: 150px; margin-left: 50px; " ></img> -->
+                </div>
+                
+                <nav class="navbar navbar-light bg-light" style="margin-bottom:20px; background-color: #EF6363 !important;">
+                    <div class="container-fluid">
+                      <a class="navbar-brand"><h1>Usuarios en Linea en nuestra App:</h1></a>
+                      <form class="d-flex">
+                        <button class="btn btn-outline-warning" type="button"  data-bs-toggle="modal" data-bs-target="#modalNuevaClient">Agregar</button>
+                      </form>
+                    </div>
+                  </nav>
+
+
+
+
+                   <!-- Modal -->
+    <div class="modal fade" id="modalNuevaClient" tabindex="-1" aria-labelledby="modalNuevaClientLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalNuevaClientLabel">Nuevo Usuario</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <input class="form-control my-2" type="text"  id="nombre-client" placeholder="Nombre del Cliente">
+                            <input class="form-control my-2" type="text"  id="opciones-client" placeholder="Ubicacion de casa ">
+                            <input class="form-control my-2" type="text"  id="tiempo-client" placeholder="Tiempo unido a la App">
+
+                            <select class="form-control my-2" id="list-img-client">
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button id="btn-guardar" type="button" class="btn btn-primary" onclick="guardar()">Guardar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+                <div class="container-fluid">
+                    <div class="row" id="clientes">
+                        <!-- <div class="col-6">
+                            <div class="card" style="border-radius:20px; background-color: #f3b60e;" >
+                            <img src="img/empresas-pics/1.jpg" style="border-radius:10px ;" class="card-img-top app-img" >
+                                <div class="card-body">
+                                <h4 class="card-title" style="margin-bottom: 0; margin-top:0;" >MC DONALDS</h4>
+                                <p class="card-text" style="margin-bottom: 0; margin-top:0; ">Comidas</p>    
+                                    <div> 
+                                        <button class="btn btn-outline-danger btn-sm" style="float:right" ><i class="fas fa-trash-alt"></i></button>
+                                    </div>
+                            </div>
+                            </div>   
+                    </div> -->
+                    </div>
+                </div>
+
+            </section>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="js/controladorClient.js" ></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+#botonesDesktop{
+    margin-top: 7px; 
+    height: 40px; 
+    width: 700px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#botonesDesktop2{
+margin-top: 30px;
+height: 80px;
+margin-left: 0px;
+width: 700px;
+background-color: blue !important;
+color: blue !important;
+}
+
+#botonNaranja{
+    background-color: coral !important;
+    border-radius: none;
+    border-color: rgb(241, 78, 19);
+    border-width: 2px solid;
+}
+
+#botonNaranja:hover{
+    background-color: rgb(206, 59, 6) !important;
+}
